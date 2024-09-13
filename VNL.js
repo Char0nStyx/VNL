@@ -6,7 +6,7 @@
  * users are expected to call the following function: loadVN()
  */
 
-const VNL_VERSION = 2;
+const VNL_VERSION = 3;
 let VN = {};
 console.log(`using VNL version ${VNL_VERSION}`);
 function loadVN() {
@@ -22,4 +22,7 @@ function loadVN() {
   }
   const parsed = JSON.parse(rReq.responseText);
   VN = parsed.vars;
+}
+function getVN(){
+  return VN;
 }

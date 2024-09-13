@@ -6,7 +6,9 @@
  * users are expected to call the following function: loadVN()
  */
 
+const VNL_VERSION = 2;
 let VN = {};
+console.log(`using VNL version ${VNL_VERSION}`);
 function loadVN() {
   const remoteURL =
     "https://raw.githubusercontent.com/StateFarmNetwork/client-keys/main/statefarm_latest.json";
